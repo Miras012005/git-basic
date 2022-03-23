@@ -1,0 +1,4 @@
+select imie, nazwisko from matematycy where rok_urodzenia > 1700;
+select id, nazwisko from matematycy where liczba_publikacji between 10 and 30;
+select sum(liczba_publikacji) from matematycy where rok_urodzenia > 1750;
+create table publikacje(id int primary key auto_increment not null, tytul text, rok year);
